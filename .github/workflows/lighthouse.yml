@@ -31,3 +31,6 @@ jobs:
 
       - name: Display Lighthouse report
         run: npx lhci upload
+
+      - name: Stop Server
+        run: npm run stop
