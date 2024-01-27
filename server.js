@@ -4,7 +4,7 @@ const http = require("http");
 
 const server = http.createServer((req, res) => {
   // Set the content type to JSON
-  res.setHeader("Content-Type", "application/json");
+  res.setHeader("Content-Type", "text/html");
 
   // Handle different routes
   if (req.url === "/api/data") {
