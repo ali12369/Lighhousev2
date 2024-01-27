@@ -1,22 +1,22 @@
 // server.js
 
-const http = require('http');
+const http = require("http");
 
 const server = http.createServer((req, res) => {
   // Set the content type to JSON
-  res.setHeader('Content-Type', 'application/json');
+  res.setHeader("Content-Type", "application/json");
 
   // Handle different routes
-  if (req.url === '/api/data') {
+  if (req.url === "/api/data") {
     // Simulate fetching data from a database
-    const data = { message: 'Hello,  this go is your server response!' };
+    const data = { message: "Hello,  this go is your S server response!" };
 
     // Send the data as a JSON string
     res.end(JSON.stringify(data));
   } else {
     // Handle other routes with a 404 response
     res.statusCode = 404;
-    res.end(JSON.stringify({ error: 'Not Found' }));
+    res.end(JSON.stringify({ error: "Not Found" }));
   }
 });
 
