@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "pm2 start server.js",
+    "start": "pm2 start server.js", 
     "stop": "pm2 stop server.js",
     "lhci": "lhci autorun --url=http://localhost:3000/api/data --numberOfRuns=1 ",
     "test": "echo \"Error: no test specified\" && exit 1"
