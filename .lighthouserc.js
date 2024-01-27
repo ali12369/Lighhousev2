@@ -1,10 +1,10 @@
 module.exports = {
-    ci: {
-      collect: {
-        url: ['https://www.flashscore.com/'],
-      },
-      upload: {
-        target: 'temporary-public-storage',
-      },
+  ci: {
+    collect: {
+      url: ["http://localhost:3000/api/data"],
     },
-  };
+    upload: {
+      target: "temporary-public-storage",
+    },
+  },
+};
