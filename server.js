@@ -9,7 +9,7 @@ const server = http.createServer((req, res) => {
   // Handle different routes
   if (req.url === "/api/data") {
     // Simulate fetching data from a database
-    const data = { message: "Hello,  this go is your A server response!" };
+    const data = { message: "Hello,  this o is your A server response!" };
 
     // Send the data as a JSON string
     res.end(JSON.stringify(data));
