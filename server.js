@@ -10,7 +10,7 @@ const server = http.createServer((req, res) => {
   if (req.url === "/api/data") {
   
     // Simulate fetching data from a database
-    const data = { message: "Helloo ,  this o is your A server response!" };
+    const data = { message: ",  this o is your A server response!" };
 
     // Send the data as a JSON string
     res.end(JSON.stringify(data));
